@@ -4,11 +4,10 @@
 # cmd=( $line )
 
 # easter eggs
-sep_m="%{B#292929}%{F#833228}  %{F-}%{B-}"
-sep_v="%{B#292929}%{F#596875}  %{F-}%{B-}"
-sep_d="%{B#292929}%{F#8c5b3e}  %{F-}%{B-}"
-sep_c="%{B#292929}%{F#917154}  %{F-}%{B-}"
-sep_a="%{F#a0a0a0}  %{F-}"
+sep_m="%{B#FF292929}%{F#FF833228}  %{F-}%{B-}"
+sep_v="%{B#FF292929}%{F#FF596875}  %{F-}%{B-}"
+sep_d="%{B#FF292929}%{F#FF8C5b3E}  %{F-}%{B-}"
+sep_c="%{B#FF292929}%{F#FF917154}  %{F-}%{B-}"
 
 set -f
 
@@ -55,16 +54,16 @@ herbstclient pad $monitor 16
         for i in "${TAGS[@]}" ; do
             case ${i:0:1} in
                 '#') # current tag
-                    echo -n "%{B#833228}"
+                    echo -n "%{B#FF833228}"
                     ;;
                 '+') # active on other monitor
-                    echo -n "%{B#917154}"
+                    echo -n "%{B#FF917154}"
                     ;;
                 ':')
                     echo -n "%{B-}"
                     ;;
                 '!') # urgent tag
-                    echo -n "%{B#917154}"
+                    echo -n "%{B#FF917154}"
                     ;;
                 *)
                     echo -n "%{B-}"
@@ -73,7 +72,7 @@ herbstclient pad $monitor 16
             echo -n " ${i:1} "
         done
 	
-	echo -n "%{c}$sep_c%{B#292929} ${windowtitle//^/^^} %{B-}"
+	echo -n "%{c}$sep_c%{B#FF292929} ${windowtitle//^/^^} %{B-}"
 	
         # align right
         echo -n "%{r}"
@@ -113,4 +112,5 @@ herbstclient pad $monitor 16
                 ;;
         esac
     done
-} 2> /dev/null | bar -g x16+1280 -B "#1f1f22" -F '#a8a8a8' -f '*-stlarch-medium-r-*-*-10-*-*-*-*-*-*-*,-*-cure.se-medium-r-*-*-11-*-*-*-*-*-*-*' $1
+} 2> /dev/null | bar -g x16+1280 -B '#FF1F1F22' -F '#FFA8A8A8' -f '*-stlarch-medium-r-*-*-10-*-*-*-*-*-*-*,-*-cure.se-medium-r-*-*-11-*-*-*-*-*-*-*' $1
+
