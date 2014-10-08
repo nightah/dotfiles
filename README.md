@@ -1,2 +1,1 @@
-dotfiles
-========
+dotties, dotties everywhere!
