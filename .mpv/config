@@ -1,0 +1,44 @@
+# video
+vo=opengl-hq
+hwdec=vdpau
+framedrop=no
+fullscreen=no
+geometry=50%:50%
+
+# audio
+softvol=no
+volume=100
+alang=jpn,jp,Japanese
+
+# subtitles
+slang=jpn,eng,en,English
+demuxer-mkv-subtitle-preroll
+ass-force-style=Kerning=yes
+
+sub-text-font="Source Sans Pro Semibold"
+sub-text-font-size=58
+sub-text-margin-y=36
+sub-text-color="#ffffffff"
+sub-text-border-color="#ff262626"
+sub-text-border-size=3.5
+sub-text-shadow-offset=1
+sub-text-shadow-color="#33000000"
+sub-text-spacing=-0.2
+
+# osd settings
+osd-font="Source Sans Pro Semibold"
+osd-bar-align-y=0
+osd-bar-h=4
+osd-border-size=1
+osd-color='#CCFFFFFF'
+osd-border-color='#99000000'
+
+# misc settings
+#title='${title}'
+cursor-autohide=always
+
+# screenshot config
+screenshot-format=png
+screenshot-png-filter=0
+screenshot-png-compression=9
+screenshot-template="~/%n"
