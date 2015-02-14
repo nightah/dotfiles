@@ -21,10 +21,12 @@ setxkbmap -option terminate:ctrl_alt_bksp
 
 # autostart
 autostart() {
-xmodmap .xmodmap
 xcmenu -d
 sxhkd &
+xmodmap .xmodmap
 nitrogen --restore
+unclutter -grab -root &
+redshift -l 62:22 &> /dev/null &
 }
 
 autostart &
