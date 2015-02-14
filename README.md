@@ -1,1 +1,1 @@
-![YES](http://a.pomf.se/zqwcdh.png "vim in action")
+![Alt text](http://a.pomf.se/vrucem.png "vim in action")
