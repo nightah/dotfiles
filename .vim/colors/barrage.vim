@@ -1,4 +1,5 @@
-" Shinryuu
+" Just a simple mod of 'colorshot'
+" named as barrage.
 
 hi clear
 if exists('syntax_on')
