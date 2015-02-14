@@ -1,0 +1,45 @@
+# rtorrent-color settings
+# 0=black, 1=red, 2=green, 3=yellow
+# 4=blue, 5=magenta, 6=cyan, 7=white.
+
+color_active_bg   = 0
+color_active_fg   = 2
+color_inactive_bg = 0
+color_inactive_fg = 2
+color_dead_bg     = 0
+color_dead_fg     = 7
+color_finished_bg = 2
+color_finished_fg = 0
+
+# general
+directory         = ~/Downloads
+session           = ~/.session
+check_hash        = no
+
+# network
+max_uploads       = 2
+upload_rate       = 1
+download_rate     = 0
+port_range        = 49165-49165
+port_random       = no
+dht               = auto
+dht_port          = 6882
+
+# peer stuff
+min_peers         = 40
+max_peers         = 100
+min_peers_seed    = 10
+max_peers_seed    = 50
+
+ # stop torrent when reaching a certain ratio
+ratio.enable=
+ratio.min.set=0
+ratio.max.set=1
+ratio.upload.set=1b
+
+# close torrents when disk space (is) below 2,5G
+schedule = low_diskspace,5,60,close_low_diskspace=2500M
+
+# encryption to ise
+# encryption = allow_incoming,try_outgoing,enable_retry
+encryption = require,require_RC4,allow_incoming,try_outgoing 
