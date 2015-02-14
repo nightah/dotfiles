@@ -1,2 +1,2 @@
-XCMENUCTRL_DMENU='dmenu -i -l 20'
-LOLIMPDNU_DMENU='dmenu -i -l 20'
+XCMENUCTRL_DMENU='dmenu -i -l 26'
+LOLIMPDNU_DMENU='dmenu -i -l 26'
