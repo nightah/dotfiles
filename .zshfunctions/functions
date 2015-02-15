@@ -1,0 +1,107 @@
+#!/bin/bash
+# shell functions
+#
+
+
+# Colorized man pages 
+man() {
+   env \
+      LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+      LESS_TERMCAP_md=$(printf "\e[1;31m") \
+      LESS_TERMCAP_me=$(printf "\e[0m") \
+      LESS_TERMCAP_se=$(printf "\e[0m") \
+      LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+      LESS_TERMCAP_ue=$(printf "\e[0m") \
+      LESS_TERMCAP_us=$(printf "\e[1;32m") \
+      man "$@"
+}
+
+# Colored Find
+# NOTE: Searches current tree recrusively.
+f() {
+   find . -iregex ".*$@.*" -printf '%P\0' | xargs -r0 ls --color=auto -1d
+}
+
+# Smarter cd
+goto() {
+   [[ -d "$1" ]] && { cd "$1"; } || cd "$(dirname "$1")";
+}
+
+# Copy && Follow 
+cpf() {
+   cp "$@" && goto "$_";
+}
+
+# Move && Follow
+mvf() {
+   mv "$@" && goto "$_";
+}
+
+# mkdir && follow
+mkcdr() {
+   mkdir -vp "$@" && cd "$_";
+}
+
+# Create tar archive
+mktar() {
+   tar cvf  "${1%%/}.tar" "${1%%/}/";
+}
+
+# Create tar.gz archive
+mktgz() {
+   tar cvzf "${1%%/}.tar.gz"  "${1%%/}/";
+}
+
+# Create tar.bz2 archive
+mktbz() {
+   tar cvjf "${1%%/}.tar.bz2" "${1%%/}/";
+}
+
+# Print MKV information
+mkv() {
+   [[ -n "$@" ]] || {
+      echo "usage : mkv [file]"
+      return
+   }
+   mkvmerge -i "$@"
+}
+
+# Remux MKV to use only 1 audio && subtible track
+remux() {
+   [[ -n "$1" ]] && [[ -n "$2" ]] && [[ -n "$3" ]] && [[ -n "$4" ]] || {
+      echo "usage : remux [output] [input] [audio track to keep] [subtible track to keep]"
+      return
+   }
+   mkvmerge -o "$1" -d 1 --audio-tracks "$3" --subtitle-tracks "$4" "$2"
+}
+
+# Same as above expect you can batch whole directory with this
+bremux() {
+   local FILTER="*.mkv"
+   [[ -n "$1" ]] && [[ -n "$2" ]] || {
+      echo "usage : bremux [audio track] [subtible track] [filter]"
+      return
+   }
+   [[ -n "$3" ]] && FILTER="$3"
+   for i in $FILTER; do
+      remux "[REMUX]$i" "$i" "$1" "$2"
+   done
+}
+
+# Japanese text to speech
+say() {
+   local URL="$(echo "$@" | perl -MURI::Escape -ne 'chomp;print uri_escape($_)')"
+   mpv -really-quiet "http://translate.google.com/translate_tts?ie=UTF-8&tl=JA&q=$URL" &> /dev/null
+}
+
+saydl() {
+   local URL="$(echo "$@" | perl -MURI::Escape -ne 'chomp;print uri_escape($_)')"
+   wget --user-agent="Mozilla/5.0" "http://translate.google.com/translate_tts?ie=UTF-8&tl=JA&q=$URL" -O "$@.mp3"
+}
+
+
+# Google translate EN-JA
+translate() {
+   local URL="$(echo "$@" | perl -MURI::Escape -ne 'chomp;print uri_escape($_)')"
+   curl -s -A "Mozilla" "http://translate.google.com/translate_a/t?client=t&ie=UTF-8&text=$URL&sl=ja&tl=en" | awk -F'"' '{print $2}'
+}
