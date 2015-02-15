@@ -5,10 +5,6 @@
 # theme
 ZSH_THEME="daveverwer"  
 
-# sources
-source $ZSH/oh-my-zsh.sh 
-source $ZDOTDIR/.zshfunctions/functions
-
 # exports
 export ZDOTDIR=$HOME
 export ZSH=$HOME/.oh-my-zsh
@@ -19,6 +15,10 @@ export PATH=$PATH:$HOME/.config/herbstluftwm
 export __GL_SYNC_TO_VBLANK=1
 export __GL_SYNC_DISPLAY_DEVICE=DFP-0
 export __GL_THREADED_OPTIMIZATIONS=0
+
+ # sources
+source $ZSH/oh-my-zsh.sh 
+source $ZDOTDIR/.zshfunctions/functions   
 
 # use case-sensitive completion
 CASE_SENSITIVE="true"
@@ -37,7 +37,6 @@ if [[ -n $SSH_CONNECTION ]]; then
  fi
 
 # aliases
-
 alias rm='rm -v'
 alias mv='mv -v'
 alias cp='cp -vr'
