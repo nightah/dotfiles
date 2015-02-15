@@ -14,7 +14,7 @@ no one never knows when your computer fades away.
 - web: qutebrowser  
 - clock: wallclock  
 - panel: bar + panel.sh  
-- music: mpd+lolimpd+ncmpcpp  
+- music: mpd + lolimpd + ncmpcpp  
 
 **Edited and bundled screenshot to remind me how my setup looks:**
 ![bundled shot](http://a.pomf.se/fgamdw.png)
