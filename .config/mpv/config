@@ -1,0 +1,48 @@
+# video
+vo=opengl-hq:smoothmotion
+#vf=format=yuv420p,vapoursynth=/home/shn/.config/mpv/mvtools.vpy:2:2
+#vf=format=yuv420p,vapoursynth=/home/shn/.config/mpv/f3kdb.vpy
+framedrop=vo
+fullscreen=no
+
+# audio
+ao=alsa
+softvol=no
+volume=100
+audio-display=no
+
+# cache
+cache=204800
+
+# window
+geometry=50%:50%
+
+# layout (box,slimbox,bottombar,topbar)
+script-opts=osc-layout=slimbox
+
+# tracks
+alang=jpn,jp,Japanese
+slang=jpn,eng,en,English
+
+# colors
+msg-color=yes
+
+# subtitles
+ass-force-style=Kerning=yes
+demuxer-mkv-subtitle-preroll
+sub-text-font="OpenSans-Semibold"
+sub-text-font-size=60
+sub-text-margin-y=24
+sub-text-color="#ffffff"
+sub-text-border-color="#000000"
+sub-text-border-size=2
+sub-text-shadow-offset=1.25
+sub-text-shadow-color="#303030"
+sub-text-spacing=0
+
+# youtube-dl
+ytdl-format=bestvideo+bestaudio/best
+
+# extensions
+[extension.webm]
+loop-file=inf
