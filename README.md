@@ -1,7 +1,7 @@
 # Repository for my dotties.
 
 Trying to keep my files up-to-date as possible, because  
-No one never knows when your computer fades away.
+no one never knows when your computer fades away.
 
 **Common applications I use:**  
 - fm: ranger  
