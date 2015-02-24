@@ -18,6 +18,7 @@ display_bitrate = "no"
 playlist_disable_highlight_delay = "1"
 playlist_display_mode = "classic"
 enable_window_title = "yes"
+execute_on_song_change = notify-send "$(lolimpd)"
 
 # colors
 colors_enabled = "yes"
