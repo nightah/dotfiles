@@ -1,0 +1,153 @@
+Read more about Darkspace on Last.fm.
+    
+    
+User-contributed text is available under the Creative Commons By-SA License and may also be available under the GNU FDL.]]>
+
+Similar artists:
+
+ * Wroth (http://www.last.fm/music/Paysage+d%27Hiver)
+ * Zhaaral (http://www.last.fm/music/Sun+of+the+Blind)
+ * Zorgh (http://www.last.fm/music/Blut+aus+Nord)
+ * Paysage d'Hiver (http://www.last.fm/music/Lunar+Aurora)
+ * Sun of the Blind (http://www.last.fm/music/Alrakis)
+ * Blut aus Nord (http://www.last.fm/tag/black%20metal)
+ * Lunar Aurora (http://www.last.fm/tag/ambient%20black%20metal)
+ * Alrakis (http://www.last.fm/tag/atmospheric%20black%20metal)
+ * black metal (http://www.last.fm/tag/dark%20ambient)
+ * ambient black metal (http://www.last.fm/tag/ambient)
+ * atmospheric black metal (l version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<artist>
+  <name>Darkspace</name>
+          <mbid>2e1651f0-539c-4078-8175-e3c34f82fd43</mbid>
+            <bandmembers>
+                    <member>
+                <name>Wroth</name>
+                                            </member>
+                    <member>
+                <name>Zhaaral</name>
+                                            </member>
+                    <member>
+                <name>Zorgh</name>
+                                            </member>
+            </bandmembers>
+        <url>http://www.last.fm/music/Darkspace</url>
+  <image size="small">http://userserve-ak.last.fm/serve/34/13157169.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/13157169.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/13157169.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/13157169.jpg</image>
+  <image size="mega">http://userserve-ak.last.fm/serve/_/13157169/Darkspace+deathstar.jpg</image>
+  <streamable>1</streamable>
+  <ontour>0</ontour>
+  <stats>
+    <listeners>35654</listeners>
+    <playcount>1098996</playcount>
+      </stats>
+
+  <similar>
+	    <artist>
+	  <name>Paysage d'Hiver</name>
+	  <url>http://www.last.fm/music/Paysage+d%27Hiver</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/4019126.jpg</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/4019126.jpg</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/4019126.jpg</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/4019126.jpg</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/500/4019126/Paysage+dHiver+1408711893_l.jpg</image>
+	  
+	        	</artist>
+    <artist>
+	  <name>Sun of the Blind</name>
+	  <url>http://www.last.fm/music/Sun+of+the+Blind</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/24963015.jpg</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/24963015.jpg</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/24963015.jpg</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/24963015.jpg</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/500/24963015/Sun+of+the+Blind+l_27ccf7aac44b4b6bbebb81b85577.jpg</image>
+	  
+	        	</artist>
+    <artist>
+	  <name>Blut aus Nord</name>
+	  <url>http://www.last.fm/music/Blut+aus+Nord</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/71424044.png</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/71424044.png</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/71424044.png</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/71424044.png</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/500/71424044/Blut+aus+Nord++PNG.png</image>
+	  
+	        	</artist>
+    <artist>
+	  <name>Lunar Aurora</name>
+	  <url>http://www.last.fm/music/Lunar+Aurora</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/55549003.jpg</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/55549003.jpg</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/55549003.jpg</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/55549003.jpg</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/_/55549003/Lunar+Aurora.jpg</image>
+	  
+	        	</artist>
+    <artist>
+	  <name>Alrakis</name>
+	  <url>http://www.last.fm/music/Alrakis</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/87161485.png</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/87161485.png</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/87161485.png</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/87161485.png</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/_/87161485/Alrakis+DS.png</image>
+	  
+	        	</artist>
+  </similar>
+    <tags>
+        <tag>
+	  <name>black metal</name>
+	  <url>http://www.last.fm/tag/black%20metal</url>
+	</tag>
+        <tag>
+	  <name>ambient black metal</name>
+	  <url>http://www.last.fm/tag/ambient%20black%20metal</url>
+	</tag>
+        <tag>
+	  <name>atmospheric black metal</name>
+	  <url>http://www.last.fm/tag/atmospheric%20black%20metal</url>
+	</tag>
+        <tag>
+	  <name>dark ambient</name>
+	  <url>http://www.last.fm/tag/dark%20ambient</url>
+	</tag>
+        <tag>
+	  <name>ambient</name>
+	  <url>http://www.last.fm/tag/ambient</url>
+	</tag>
+      </tags>
+      <bio>
+        <links>
+        <link rel="original" href="http://www.last.fm/music/Darkspace/+wiki" />
+    </links>
+                                    <published>Sun, 18 Aug 2013 17:09:36 +0000</published>
+    <summary>
+        <![CDATA[        Darkspace is an ambient black metal band from Bern, Switzerland formed in 1999, comprised of three members who call themselves Wroth, Zhaaral and Zorgh. Space-age names for an equally space-age project. True to its name, what Darkspace' s music describes is the nothingness of space. Their style is characterized by an ambient surrounding, hazy production and monotonic sounds,  which is somewhat uniquely melodic and variable.
+
+        <a href="http://www.last.fm/music/Darkspace">Read more about Darkspace on Last.fm</a>.
+    ]]>
+    </summary>
+    <content>
+            <![CDATA[        Darkspace is an ambient black metal band from Bern, Switzerland formed in 1999, comprised of three members who call themselves Wroth, Zhaaral and Zorgh. Space-age names for an equally space-age project. True to its name, what Darkspace' s music describes is the nothingness of space. Their style is characterized by an ambient surrounding, hazy production and monotonic sounds,  which is somewhat uniquely melodic and variable.
+
+        <a href="http://www.last.fm/music/Darkspace">Read more about Darkspace on Last.fm</a>.
+    
+    
+User-contributed text is available under the Creative Commons By-SA License and may also be available under the GNU FDL.]]>
+    </content>
+            <placeformed>Bern, Switzerland</placeformed>                        <yearformed>1999</yearformed>
+            <formationlist>
+                    <formation>
+                <yearfrom>1999</yearfrom>
+                <yearto></yearto>
+            </formation>
+            </formationlist>
+      </bio>
+  </artist></lfm>
+)
+ * dark ambient (http://www.last.fm/music/Darkspace)
+ * ambient (http://www.last.fm/music/Paysage+d%27Hiver)
+
+http://www.last.fm/music/Darkspace
