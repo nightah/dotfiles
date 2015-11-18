@@ -17,4 +17,4 @@ no one never knows when your computer fades away.
 - music: mpd + lolimpd + ncmpcpp  
 
 **Edited and bundled screenshot to remind me how my setup looks:**
-![bundled shot](http://a.pomf.se/fgamdw.png)
+![bundled shot](http://files.catbox.moe/b0f458.png)
