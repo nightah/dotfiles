@@ -1,9 +1,0 @@
-# Use high quality resampling 
-defaults.pcm.rate_converter "speexrate_best"
-
-pcm.!default {
-    type hw
-    card 0
-    device 0
-    #rate 44100
-}

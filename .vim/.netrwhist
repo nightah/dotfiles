@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/shn/.config/mpv'
+let g:netrw_dirhist_2='/home/shn/.config/herbstluftwm'
+let g:netrw_dirhist_3='/home/shn/.zshfunctions'
+let g:netrw_dirhist_4='/home/shn/.vim/bundle/vim-airline/autoload/airline/themes'
+let g:netrw_dirhist_5='/home/shn/.zsh/functions'
+let g:netrw_dirhist_6='/home/shn/games'
+let g:netrw_dirhist_7='/home/shn/.config/sxhkd'
+let g:netrw_dirhist_8='/home/shn/.config/mpv'
+let g:netrw_dirhist_9='/home/shn/.config/herbstluftwm'

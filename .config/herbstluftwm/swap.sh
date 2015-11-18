@@ -28,7 +28,7 @@
 # stack_frame = frame for stack. 0=top/left 1=bottom/right d=smaller frame
 split_direction="horizontal"
 split_ratio="0.6667" 
-stack_layout="vertical" 
+stack_layout="grid" 
 stack_frame=d 
 # Here ends the section for users #
 

@@ -1,0 +1,10 @@
+! KBC Poker II Finnish layout fix
+!keycode 66 = ISO_Level3_Shift
+!keycode 133 = Mode_switch
+!keycode 135 = less greater bar
+
+! HHKB2 Finnish layout fix
+!keycode 49 = apostrophe
+keycode 100 = ISO_Level3_Shift
+keycode 134 = Mode_switch
+keycode 133 = less greater bar

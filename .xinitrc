@@ -8,7 +8,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-# settings for various things
+# magic
 setxkbmap fi
 xset s off
 xset -dpms
@@ -21,13 +21,22 @@ setxkbmap -option terminate:ctrl_alt_bksp
 
 # autostart
 autostart() {
-xcmenu -d
-sxhkd &
-xmodmap .xmodmap
-nitrogen --restore
-unclutter -grab -root &
-redshift -l 62:22 &> /dev/null &
+   nitrogen --restore
+   unclutter -grab -root &
+   xmodmap .xmodmap
+   xcmenu -d
+   sxhkd &
+   redshift -l 64:25 -b 0.8:0.8 &> /dev/null &
+}
+
+# kill leftovers
+autokill() {
+   killall unclutter
+   killall xcmenu
+   killall unclutter
+   killall sxhkd
 }
 
 autostart &
 exec herbstluftwm
+autokill; sleep 1

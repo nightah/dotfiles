@@ -9,10 +9,10 @@ set bg=dark
 let colors_name = 'barrage'
 
 " General colors
-hi NonText     cterm=NONE ctermfg=blue      ctermbg=NONE
-hi LineNr      cterm=NONE ctermfg=darkgray  ctermbg=NONE
-hi VertSplit   cterm=NONE ctermfg=lightgray ctermbg=black
-hi Visual      cterm=NONE ctermfg=NONE      ctermbg=8
+hi NonText     cterm=NONE ctermfg=1         ctermbg=NONE
+hi LineNr      cterm=NONE ctermfg=241       ctermbg=NONE
+hi VertSplit   cterm=NONE ctermfg=238       ctermbg=NONE
+hi Visual      cterm=NONE ctermfg=253       ctermbg=1
 hi Title       cterm=NONE ctermfg=magenta   ctermbg=NONE
 hi WildMenu    cterm=NONE ctermfg=black     ctermbg=lightgray
 hi ErrorMsg    cterm=NONE ctermfg=red       ctermbg=black
@@ -20,8 +20,8 @@ hi WarningMsg  cterm=NONE ctermfg=3         ctermbg=black
 hi ModeMsg     cterm=NONE ctermfg=lightgray ctermbg=black
 
 if version >= 700 " Vim 7 specific colors
-   hi CursorLine  cterm=NONE      ctermfg=NONE ctermbg=black
-   hi MatchParen  cterm=NONE      ctermfg=red  ctermbg=black
+   hi CursorLine  cterm=NONE      ctermfg=NONE ctermbg=235
+   hi MatchParen  cterm=NONE      ctermfg=1    ctermbg=black
    hi! link CursorColumn CursorLine
 endif
 
@@ -30,23 +30,24 @@ hi Pmenu       cterm=NONE ctermfg=white     ctermbg=black
 hi PmenuSel    cterm=NONE ctermfg=lightgray ctermbg=black
 
 " Tabs
-hi TabLine     cterm=NONE ctermfg=255       ctermbg=238
+hi TabLine     cterm=NONE ctermfg=252       ctermbg=222
 hi TabLineSel  cterm=NONE ctermfg=17        ctermbg=190
 hi TabLineFill cterm=NONE ctermfg=NONE      ctermbg=NONE
 
 " Syntax highlighting
-hi Comment     cterm=NONE      ctermfg=238         ctermbg=NONE
-hi String      cterm=NONE      ctermfg=245         ctermbg=NONE
-hi Keyword     cterm=NONE      ctermfg=darkred     ctermbg=NONE
+hi Comment     cterm=NONE      ctermfg=240         ctermbg=NONE
+hi String      cterm=NONE      ctermfg=244         ctermbg=NONE
+hi Keyword     cterm=NONE      ctermfg=1           ctermbg=NONE
 hi PreProc     cterm=NONE      ctermfg=cyan        ctermbg=NONE
-hi Todo        cterm=underline ctermfg=red         ctermbg=NONE
-hi Constant    cterm=NONE      ctermfg=red         ctermbg=NONE
-hi Identifier  cterm=NONE      ctermfg=darkred	   ctermbg=NONE
+hi Todo        cterm=underline ctermfg=magenta     ctermbg=NONE
+hi Constant    cterm=NONE      ctermfg=1           ctermbg=NONE
+hi Identifier  cterm=NONE      ctermfg=darkmagenta ctermbg=NONE
 hi Type        cterm=NONE      ctermfg=yellow      ctermbg=NONE
-hi Statement   cterm=NONE      ctermfg=darkmagenta        ctermbg=NONE
-hi Special     cterm=NONE      ctermfg=magenta       ctermbg=NONE
-hi Delimiter   cterm=NONE      ctermfg=darkred     ctermbg=NONE
+hi Statement   cterm=NONE      ctermfg=1           ctermbg=NONE
+hi Special     cterm=NONE      ctermfg=magenta     ctermbg=NONE
+hi Delimiter   cterm=NONE      ctermfg=1           ctermbg=NONE
 hi Function    cterm=NONE      ctermfg=3           ctermbg=NONE
+hi Directory   cterm=NONE      ctermfg=245         ctermbg=NONE
 
 hi  link Number         Constant
 hi! link StatusLine     VertSplit
@@ -133,7 +134,7 @@ hi link cssValueLength     Type
 hi cssPseudoClassId        cterm=NONE ctermfg=darkyellow ctermbg=NONE
 
 " Spell checking
-hi SpellBad   cterm=underline ctermfg=red ctermbg=NONE
+hi SpellBad   cterm=underline ctermfg=1   ctermbg=NONE
 hi SpellCap   cterm=underline ctermfg=3   ctermbg=NONE
 hi SpellRare  cterm=underline ctermfg=3   ctermbg=NONE
 hi SpellLocal cterm=underline ctermfg=3   ctermbg=NONE
