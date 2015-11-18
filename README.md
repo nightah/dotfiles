@@ -16,5 +16,5 @@ no one never knows when your computer fades away.
 - panel: bar + panel.sh  
 - music: mpd + lolimpd + ncmpcpp  
 
-**Edited and bundled screenshot to remind me how my setup looks:**
+**Something funny:**
 ![bundled shot](http://files.catbox.moe/b0f458.png)
