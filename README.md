@@ -17,4 +17,4 @@ no one never knows when your computer fades away.
 - music: mpd + lolimpd + ncmpcpp  
 
 **Something funny:**
-![bundled shot](http://files.catbox.moe/b0f458.png)
+![bundled shot](http://files.catbox.moe/c62563.png)
