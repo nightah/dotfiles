@@ -6,9 +6,9 @@ main() {
    local ARGS=
    local FONT=
    [[ "$@" != *-fn ]] && FONT="berry 9"
-   [[ "$@" != *-nb ]] && ARGS="$ARGS -nb #202225"
+   [[ "$@" != *-nb ]] && ARGS="$ARGS -nb #1d1f22"
    [[ "$@" != *-nf ]] && ARGS="$ARGS -nf #839496"
-   [[ "$@" != *-sb ]] && ARGS="$ARGS -sb #1c1e22"
+   [[ "$@" != *-sb ]] && ARGS="$ARGS -sb #202225"
    [[ "$@" != *-sf ]] && ARGS="$ARGS -sf #6e464b"
    [[ -n "$FONT" ]] && {
       /usr/bin/dmenu -fn "$FONT" $ARGS "$@"; return;
