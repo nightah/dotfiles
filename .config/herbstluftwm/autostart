@@ -31,8 +31,8 @@ done
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
 hc set frame_border_active_color '#353535'
-hc set frame_border_normal_color '#151515'
-hc set frame_bg_normal_color '#252525'
+hc set frame_border_normal_color '#161616'
+hc set frame_bg_normal_color '#262626'
 hc set frame_bg_active_color '#6c3b41'
 hc set frame_border_width 1
 hc set always_show_frame 0
@@ -48,7 +48,7 @@ hc attr theme.inner_color '#202020'
 hc attr theme.border_width 2
 hc attr theme.floating.border_width 4
 hc attr theme.floating.outer_width 1
-hc attr theme.floating.outer_color black
+hc attr theme.floating.outer_color '#252525'
 hc attr theme.active.inner_color '#383838'
 hc attr theme.active.outer_color '#282828'
 hc attr theme.background_color '#ffffff'
@@ -84,12 +84,12 @@ hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' pseudotile=on
 hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK)' manage=off
 
-hc rule class=Dwb tag=term focus=on
-hc rule class=qutebrowser tag=term focus=on
-hc rule class=Chromium tag=term focus=on
-hc rule class=mpv tag=term focus=on
-hc rule class=sxiv tag=term focus=on
-hc rule class=wine tag=term focus=on
+hc rule class=Dwb tag=一 focus=on
+hc rule class=qutebrowser tag=一 focus=on
+hc rule class=gimp tag=三 focus=on
+hc rule class=mpv tag=一 focus=on
+hc rule class=sxiv tag=一 focus=on
+hc rule class=wine tag=一 focus=on
 
 # unlock, just to be sure
 hc unlock
