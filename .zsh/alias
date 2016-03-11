@@ -1,6 +1,7 @@
 # Thing's are getting
 # interesting here.
 
+alias po='poweroff'
 alias rm='rm -v'
 alias mv='mv -v'
 alias cp='cp -vr'

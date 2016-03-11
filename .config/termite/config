@@ -10,8 +10,8 @@ clickable_url = true
 font = berry 9
 scrollback_lines = 1000
 search_wrap = true
-geometry = 380x220
 #icon_name = terminal
+#geometry = 480x280
 
 # "system", "on" or "off"
 cursor_blink = off
@@ -23,16 +23,16 @@ cursor_shape = block
 browser = qutebrowser
 
 # set size hints for the window
-size_hints = false
+size_hints = true
 
 # emit escape sequences for other keys modified by Control
-modify_other_keys = false
+#modify_other_keys = false
 
 [colors]
 cursor = #7B8695
 foreground = #7B8695
 foreground_bold = #eee8d5
-background = #202225
+background = #1d1f21
 
 # 20% background transparency (requires a compositor)
 # background = rgba(63, 63, 63, 0.8)

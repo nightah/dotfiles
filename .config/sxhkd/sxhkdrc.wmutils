@@ -1,0 +1,64 @@
+# swm/wmutils configuration
+
+# screencast
+alt + ctrl + a
+   screencast
+
+alt + ctrl + x
+   pkill -f 'x11grab'
+
+# redshift
+ctrl + apostrophe
+   pkill -USR1 redshift
+ 
+# reload sxhkd config
+alt + shift + s
+   pkill -USR1 -x sxhkd
+
+# display off
+XF86PowerOff
+   display.sh off
+
+# xcmenu/lolimpd
+alt + {odiaeresis,adiaeresis}
+   {xcmenuctrl,lolimpdnu}
+
+# apps
+alt + {1,2,3}
+   {qutebrowser,spacefm,gimp}
+   
+# terminal
+alt + shift + Return
+   termite
+
+# menu
+alt + p
+   dmenu_run
+
+# mpd
+ctrl + section
+   mpc toggle
+
+# fullscreen
+alt + shift + f
+   fullscreen ${pwd}
+
+# move windows around
+alt + shift + {Left,Down,Up,Right}
+   wmv {-20 0, 0 20, 0 -20, 20, 0} ${pfw}
+
+# move windows to corners
+alt + shift + {y,u,b,n,g}
+   corner {tl, tr, bl, br, md} ${pwd}
+
+# resize window
+alt + ctrl + {Left,Down,Up,Right}
+   wrs {-20 0, 0 20, 0 -20, 20, 0} ${pfw}
+
+# cycle through windows
+alt {, + shift} + tab
+   vroum {next, prev}
+
+# move windows with the mouse
+alt + !button{1,3}
+   {wmv, wrs} -a %i %i ${pwd}

@@ -1,0 +1,48 @@
+# sxhkd configuration
+# herbstluftwm
+
+# TAS
+alt + 4
+   cd ~/TAS/fceux-2.2.2 && wine fceux.exe
+
+# Wakan
+alt + 5
+   cd ~/games/PC/Undertale && wine UNDERTALE.exe
+
+# reload sxhkd config
+alt + shift + s
+   pkill -USR1 -x sxhkd; notify-send "sxhkd settings reloaded"
+
+# quit herbstluftwm
+alt + control + q
+   herbstclient quit
+
+# toggle redshift
+control + apostrophe
+   pkill -USR1 redshift; notify-send "redshift toggled"
+
+# display off
+XF86PowerOff
+   display.sh off
+
+# menu
+alt + p
+   dmenu_run
+
+alt + comma
+   dmenufm
+        
+# mpd toggle
+control + section
+   mpc toggle
+
+# web, fm, img
+alt + {1,2,3}
+   {qutebrowser,spacefm,gimp}
+    
+alt + {odiaeresis,adiaeresis}
+   {xcmenuctrl,lolimpdnu}
+    
+# terminal
+alt + shift + Return
+   urxvtc

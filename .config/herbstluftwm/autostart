@@ -1,4 +1,6 @@
 #!/bin/bash
+# Shinryuu's herbstluftwm
+# configuration.
 
 hc() {
     herbstclient "$@"
@@ -15,7 +17,7 @@ Mod=Mod1    # Use alt as the main modifier
 #herbstclient load ${TAG_NAMES[0]} '(clients max:0)'
 
 # tags
-TAG_NAMES=("一" "二" "三" "四" "五" "六")
+TAG_NAMES=("term" "web" "img" "null" "herb" "foo")
 TAG_KEYS=( {1..6} 0 )
 
 hc rename default "${TAG_NAMES[0]}" || true
@@ -28,9 +30,10 @@ for i in ${!TAG_NAMES[@]} ; do
     fi
 done
 
-hc attr theme.tiling.reset 1
-hc attr theme.floating.reset 1
-hc set frame_border_active_color '#353535'
+# theme
+#hc attr theme.tiling.reset 1
+#hc attr theme.floating.reset 1
+hc set frame_border_active_color '#161616'
 hc set frame_border_normal_color '#161616'
 hc set frame_bg_normal_color '#262626'
 hc set frame_bg_active_color '#6c3b41'
@@ -40,17 +43,22 @@ hc set frame_bg_transparent 1
 hc set frame_transparent_width 0
 hc set frame_gap 0
 
-hc attr theme.active.color '#353535'
+hc attr theme.active.color '#5e3838'
 hc attr theme.normal.color '#252525'
 hc attr theme.urgent.color orange
-hc attr theme.inner_width 1
+hc attr theme.inner_width 2
+hc attr theme.outer_width 2
 hc attr theme.inner_color '#202020'
-hc attr theme.border_width 2
-hc attr theme.floating.border_width 4
-hc attr theme.floating.outer_width 1
-hc attr theme.floating.outer_color '#252525'
-hc attr theme.active.inner_color '#383838'
+hc attr theme.border_width 6
+hc attr theme.floating.border_width 6
+hc attr theme.floating.outer_width 2
+hc attr theme.floating.inner_width 2
+hc attr theme.floating.inner_color '#282828'
+hc attr theme.floating.outer_color '#303030'
+hc attr theme.active.inner_color '#282828'
 hc attr theme.active.outer_color '#282828'
+hc attr theme.normal.inner_color '#303030'
+hc attr theme.normal.outer_color '#303030'
 hc attr theme.background_color '#ffffff'
 
 # mouse bindings    
@@ -59,12 +67,15 @@ hc mousebind $Mod-Button2 zoom
 hc mousebind $Mod-Button3 resize
 
 # layouts
-hc load 一 '
-(split horizontal:0.500000:0 
-      (clients vertical:0 0x1800005)
-      (clients vertical:0))'
-     
-hc load 二 '
+
+hc load term '
+(split horizontal:0.500000:0
+      (clients vertical:0 0x1400003)
+   (split vertical:0.580000:1
+      (clients vertical:0)
+      (clients vertical:0 0x2a00001)))'
+
+hc load web '
 (split horizontal:0.500000:1
    (split vertical:0.500000:1
       (clients vertical:0) 
@@ -79,17 +90,16 @@ hc unrule -F
 # focus new clients
 hc rule focus=on
 
-# rules for clients
+# rules
+hc rule class=qutebrowser tag=term focus=on
+hc rule class=gimp tag=img focus=on
+hc rule class=mpv tag=term focus=on
+hc rule class=sxiv tag=term focus=on
+hc rule class=wine tag=term focus=on
+
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' pseudotile=on
 hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
-hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK)' manage=off
-
-hc rule class=Dwb tag=一 focus=on
-hc rule class=qutebrowser tag=一 focus=on
-hc rule class=gimp tag=三 focus=on
-hc rule class=mpv tag=一 focus=on
-hc rule class=sxiv tag=一 focus=on
-hc rule class=wine tag=一 focus=on
+hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 
 # unlock, just to be sure
 hc unlock
@@ -97,8 +107,7 @@ hc unlock
 herbstclient set tree_style '╾│ ├└╼─┐'
 
 # do multi monitor setup here, e.g.:
-# hc set_monitors 1280x1024+0+0 1920x1080+1280+0
-hc detect_monitors
+hc set_monitors 1920x1080+1280+0 1280x1024+0+0
 
 # panel
-panel.sh &
+#panel.sh &

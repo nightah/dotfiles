@@ -64,7 +64,7 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-8+24"
+    geometry = "300x5-20+20"
     
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
@@ -136,7 +136,7 @@
     startup_notification = false
     
     # dmenu path.
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu = /usr/bin/dmenu -p dunst
     
     # Browser for opening urls in context menu.
     browser = /usr/bin/qutebrowser
@@ -149,7 +149,7 @@
 
 [frame]
     width = 3
-    color = "#424344"
+    color = "#202225"
 
 [shortcuts]
 
@@ -167,27 +167,27 @@
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1".
-    history = ctrl+apostrophe
+    #history = ctrl+apostrophe
     
     # Context menu.
-    context = ctrl+adiaeresis
+    #context = ctrl+adiaeresis
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#1c1e21"
-    foreground = "#495e61"
-    timeout = 6
+    background = "#1d1f21"
+    foreground = "#5e3838"
+    timeout = 4
 
 [urgency_normal]
-    background = "#1c1e21"
-    foreground = "#80764d"
-    timeout = 6
+    background = "#1d1f21"
+    foreground = "#5e3838"
+    timeout = 4
 
 [urgency_critical]
-    background = "#8c5b3e"
-    foreground = "#"
-    timeout = 6
+    background = "#1d1f21"
+    foreground = "#5e3838"
+    timeout = 4
 
 
 # Every section that isn't one of the above is interpreted as a rules to
