@@ -1,4 +1,3 @@
-#Treasure box of wonders. Trying to keep configuration files
-#'up-to-date' as possible, backups are important.
+#Treasure box of wonders. Have fun!
 
 ![bundled shot](https://files.catbox.moe/7dobkw.png)
