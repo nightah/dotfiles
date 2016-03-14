@@ -5,10 +5,13 @@
 !  ░░███   ░██ ░██ ░██░██   ░██ ██░░░██ ░██ ░██ ░██  ███████ ░██████ 
 !   ██░██  ░██ ░██ ░██░██   ░██░██  ░██ ░██ ░██ ░██ ██░░░░██ ░██░░░  
 !  ██ ░░██ ███ ░██ ░██░░██████ ░░██████ ███ ░██ ░██░░████████░██     
-! ░░   ░░ ░░░  ░░  ░░  ░░░░░░   ░░░░░░ ░░░  ░░  ░░  ░░░░░░░░ ░░   
-! Finnish layout fix.
+! ░░   ░░ ░░░  ░░  ░░  ░░░░░░   ░░░░░░ ░░░  ░░  ░░  ░░░░░░░░ ░░  
+! Undertale arrow keys.
 
-! Adds <,> and | keys to Super.
-keycode 100 = ISO_Level3_Shift
-keycode 134 = Mode_switch
-keycode 133 = less greater bar
+! Add an extra arrow keys for HHKB.
+! Replaces p,ö,k,ä keys.
+
+keycode 33 = Up
+keycode 47 = Down
+keycode 46 = Left
+keycode 48 = Right
