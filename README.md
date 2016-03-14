@@ -1,7 +1,14 @@
-# Repository for my dotties.
+      ██            ██     ████ ██  ██
+     ░██           ░██    ░██░ ░░  ░██
+     ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
+  ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░ 
+ ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████ 
+░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██
+░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████ 
+ ░░░░░░  ░░░░░░     ░░    ░░   ░░ ░░░  ░░░░░░ ░░░░░░
 
-Trying to keep my files up-to-date as possible, because  
-no one never knows when your computer fades away.
+Treasure box of wonders. Trying to keep configuration files
+'up-to-date' as possible, backups are important.
 
 **Common applications I use:**  
 - fm: ranger
@@ -12,8 +19,8 @@ no one never knows when your computer fades away.
 - clip: xcmenu
 - panel: lemonbar
 - web: qutebrowser
-- wm: 2bwm + herbstluftwm  
+- wm: 2bwm/herbstluftwm  
 - clock: wallclock/lemonbar  
-- music: mpd + lolimpd + ncmpcpp  
+- music: mpd/ncmpcpp/lolimpd 
 
-![bundled shot](https://files.catbox.moe/h5jizv.png)
+![bundled shot](https://files.catbox.moe/7dobkw.png)
