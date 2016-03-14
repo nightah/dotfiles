@@ -1,6 +1,17 @@
+#  ██                                                       
+# ░██                                         █████         
+# ░██       ██████   ██████ ██████  ██████   ██░░░██  █████ 
+# ░██████  ░░░░░░██ ░░██░░█░░██░░█ ░░░░░░██ ░██  ░██ ██░░░██
+# ░██░░░██  ███████  ░██ ░  ░██ ░   ███████ ░░██████░███████
+# ░██  ░██ ██░░░░██  ░██    ░██    ██░░░░██  ░░░░░██░██░░░░ 
+# ░██████ ░░████████░███   ░███   ░░████████  █████ ░░██████
+# ░░░░░    ░░░░░░░░ ░░░    ░░░     ░░░░░░░░  ░░░░░   ░░░░░░ 
+# COLORSCHEME FOR RANGER
+#
 # Copyright (C) 2009, 2010, 2011  Roman Zimbelmann <romanz@lavabit.com>
 # This software is distributed under the terms of the GNU GPL version 3.
 
+# Barrage colorscheme
 from ranger.gui.colorscheme import ColorScheme
 from ranger.gui.color import *
 

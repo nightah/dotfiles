@@ -1,29 +1,17 @@
-# sxhkd configuration
-# herbstluftwm
+#                  ██      ██          ██
+#                 ░██     ░██         ░██
+#   ██████ ██   ██░██     ░██  ██     ░██
+#  ██░░░░ ░░██ ██ ░██████ ░██ ██   ██████
+# ░░█████  ░░███  ░██░░░██░████   ██░░░██
+#  ░░░░░██  ██░██ ░██  ░██░██░██ ░██  ░██
+#  ██████  ██ ░░██░██  ░██░██░░██░░██████
+# ░░░░░░  ░░   ░░ ░░   ░░ ░░  ░░  ░░░░░░ 
 
-# TAS
-alt + 4
-   cd ~/TAS/fceux-2.2.2 && wine fceux.exe
-
-# Wakan
-alt + 5
-   cd ~/games/PC/Undertale && wine UNDERTALE.exe
-
-# reload sxhkd config
-alt + shift + s
-   pkill -USR1 -x sxhkd; notify-send "sxhkd settings reloaded"
-
-# quit herbstluftwm
-alt + control + q
-   herbstclient quit
-
-# toggle redshift
-control + apostrophe
-   pkill -USR1 redshift; notify-send "redshift toggled"
-
-# display off
-XF86PowerOff
-   display.sh off
+# Normal commands to replace
+# any window manager's way to
+# handle keybindings. Makes life
+# a lot easier. Doesn't include
+# bindings to move windows.
 
 # menu
 alt + p
@@ -46,3 +34,27 @@ alt + {odiaeresis,adiaeresis}
 # terminal
 alt + shift + Return
    urxvtc
+
+# TAS
+alt + 4
+   cd ~/TAS/fceux-2.2.2 && wine fceux.exe
+
+# Undertale
+alt + 5
+   cd ~/games/PC/Undertale && wine UNDERTALE.exe
+
+# reload sxhkd config
+alt + shift + s
+   pkill -USR1 -x sxhkd; notify-send "sxhkd settings reloaded"
+
+# quit herbstluftwm
+alt + control + q
+   herbstclient quit
+
+# toggle redshift
+control + apostrophe
+   pkill -USR1 redshift; notify-send "redshift toggled"
+
+# display off
+XF86PowerOff
+   display.sh off

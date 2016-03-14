@@ -1,4 +1,12 @@
-# ~/.zshrc
+#                 ██                    
+#                ░██                    
+#  ██████  ██████░██      ██████  █████ 
+# ░░░░██  ██░░░░ ░██████ ░░██░░█ ██░░░██
+#    ██  ░░█████ ░██░░░██ ░██ ░ ░██  ░░ 
+#   ██    ░░░░░██░██  ░██ ░██   ░██   ██
+#  ██████ ██████ ░██  ░██░███   ░░█████ 
+# ░░░░░░ ░░░░░░  ░░   ░░ ░░░     ░░░░░
+# Hackish, but works.
 
 # initialize completion system etc.
 autoload -U compinit colors && colors
@@ -16,6 +24,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.bin:$PATH
 export PATH=$PATH:$HOME/.config/herbstluftwm
 
+# nvidia settings
 export __GL_SYNC_TO_VBLANK=1
 export __GL_SYNC_DISPLAY_DEVICE=DVI-I-2
 export __GL_THREADED_OPTIMIZATIONS=0
