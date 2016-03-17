@@ -23,4 +23,4 @@ I tend to configure with settings a lot. I've been a hardcore herbstluftwm user 
 #####TODO:
 - [ ] Set stow up!
 
-![bundled shot](https://files.catbox.moe/7dobkw.png)
+![bundled shot](https://files.catbox.moe/oqpnh9.png)
