@@ -2,7 +2,7 @@
 
 __Introduction:__
 
-Repository for my dotfiles. . I'm planning to keep these settings as up-to-date as possible. In the near future I'll be setting stow up as well, so people can install my dotfiles with ease. Feel free to comment and use my files for your own greedy needs.
+Repository for my dotfiles. I'm planning to keep these settings as up-to-date as possible. In the near future I'll be setting stow up as well, so people can install my dotfiles with ease. Feel free to comment and use my files for your own greedy needs.
 
 __About my setup__:
 
