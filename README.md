@@ -16,4 +16,4 @@ Repository for my dotfiles. I'm planning to keep these settings as up-to-date as
 - __internet browser:__ qutebrowser
 - __file manager:__ coretools/ranger
 
-![bundled shot](https://files.catbox.moe/5bsry1.png)
+![bundled shot](https://files.catbox.moe/v1k238.png)
