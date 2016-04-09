@@ -16,4 +16,4 @@ Repository for my dotfiles. I'm planning to keep these settings as up-to-date as
 - __internet browser:__ qutebrowser/firefox
 - __file manager:__ coretools/ranger/spacefm
 
-![bundled shot](https://files.catbox.moe/661br6.png)
+![bundled shot](https://files.catbox.moe/56quhd.png)
