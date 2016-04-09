@@ -6,14 +6,14 @@ Repository for my dotfiles. I'm planning to keep these settings as up-to-date as
 
 #####Applications:
 - __menu:__ dmenu
-- __panel:__ lemonbar 
+- __panel:__ lemonbar/yabar 
 - __text editor:__ vim
 - __image viewer:__ sxiv
 - __composition:__ compton
 - __terminal:__ urxvt/termite
 - __window manager:__ 2bwm/herbstluftwm
 - __music:__ mpd+ncmpcpp+lolimpd/deadbeef
-- __internet browser:__ qutebrowser/firefox
-- __file manager:__ coretools/ranger/spacefm
+- __internet browser:__ qutebrowser
+- __file manager:__ coretools/ranger
 
-![bundled shot](https://files.catbox.moe/56quhd.png)
+![bundled shot](https://files.catbox.moe/5bsry1.png)
