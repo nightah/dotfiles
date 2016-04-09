@@ -12,11 +12,17 @@ URxvt*font: xft:berry:pixelsize=9,\
             xft:Kochi Gothic
 URxvt*boldFont:
 
-! magic
+! colorscheme
 #include "/home/shn/.colors/barrage"
 
 ! uim
-URxvt.inputMethod: uim-xim
+! URxvt.inputMethod: uim-xim
+
+! Fix ctrl + arrow keys
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Left: \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C
 
 ! settings
 URxvt*scrollBar: false

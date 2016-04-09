@@ -17,11 +17,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-# UIM 設定
-#export GTK_IM_MODULE='uim'
-#export XMODIFIERS=@im='uim'
-#export QT_IM_MODULE='uim'
-#uim-xim &> /dev/null &
+# URxvt 設定
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
 # まほう
 setxkbmap fi
@@ -34,31 +31,26 @@ xset +fp /usr/share/fonts/artwiz-fonts
 xsetroot -cursor_name left_ptr
 setxkbmap -option terminate:ctrl_alt_bksp
 
-# URXvt 設定  
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
-
 # オートスタート
 autostart() {
    nitrogen --restore
-   urxvtd -q -f -o
-   unclutter -grab -root &
    xmodmap .xmodmap
    xcmenu -d
    sxhkd &
+   urxvtd -q -f -o
    redshift -l 64:25 -b 0.8:0.8 &> /dev/null &
 }
 
 # さよなら
 autokill() {
-   killall unclutter
    killall xcmenu
-   killall unclutter
    killall sxhkd
    killall urxvtd
    killall lemonbar
+   killall redshift
 }
 
 # 始まる
 autostart &
 exec 2bwm
-autokill; sleep 2
+autokill; sleep 1
