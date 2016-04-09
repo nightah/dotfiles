@@ -1,6 +1,3 @@
-# Thing's are getting
-# interesting here.
-
 alias po='poweroff'
 alias rm='rm -v'
 alias mv='mv -v'
@@ -25,6 +22,4 @@ alias undertale='setxkbmap fi; xmodmap ~/.xmodmap_undertale; xset r rate 350 45'
 alias svorak='setxkbmap -layout se -variant dvorak; xmodmap ~/.xmodmap; xset r rate 350 45'
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" && echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'s
 alias np="mpc current -f '%title% by %artist% from %album%' | xcmenu -ci"
-alias yle='yle-dl --sublang fin --destdir ~/Downloads'
-alias jwine='LC_ALL=ja_JP.utf8 wine'
-alias shnflac='shnsplit -f *.cue -t "%n %t" -o "flac flac -s -8 -o %f -" *.flac'
+alias dnp="deadbeef --nowplaying '%t by %a from %b' | xcmenu -ci"
