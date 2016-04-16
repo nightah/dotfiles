@@ -8,8 +8,8 @@
 !  ░░░░░░ ░░░    ░░   ░░    ░░       ░░ 
 
 ! fonts
-URxvt*font: xft:berry:pixelsize=9,\
-            xft:Kochi Gothic
+URxvt*font: xft:berry:size=8,\
+            xft:Kochi Gothic:antialias=false
 URxvt*boldFont:
 
 ! colorscheme
