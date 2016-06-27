@@ -1,4 +1,5 @@
 #!/bin/sh
+
 #          ██          ██   ██                 
 #         ░░          ░░   ░██                 
 #  ██   ██ ██ ███████  ██ ██████ ██████  █████ 
@@ -7,9 +8,9 @@
 #   ██░██ ░██ ░██  ░██░██  ░██   ░██   ░██   ██
 #  ██ ░░██░██ ███  ░██░██  ░░██ ░███   ░░█████ 
 # ░░   ░░ ░░ ░░░   ░░ ░░    ░░  ░░░     ░░░░░  
-# Destroy everything!
+# destroy everything!
 
-# 設定 
+# do something 
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
   for f in /etc/X11/xinit/xinitrc.d/*; do
     [ -x "$f" ] && . "$f"
@@ -17,21 +18,18 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-# URxvt 設定
+# xrdb
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-# まほう
+# magic
 setxkbmap fi
 xset s off
 xset -dpms
 xset r rate 350 45
-xset +fp /usr/share/fonts/TTF
-xset +fp /usr/share/fonts/local
-xset +fp /usr/share/fonts/artwiz-fonts
 xsetroot -cursor_name left_ptr
 setxkbmap -option terminate:ctrl_alt_bksp
 
-# オートスタート
+# autostart
 autostart() {
    nitrogen --restore
    xmodmap .xmodmap
@@ -41,7 +39,7 @@ autostart() {
    redshift -l 64:25 -b 0.8:0.8 &> /dev/null &
 }
 
-# さよなら
+# kill everyone
 autokill() {
    killall xcmenu
    killall sxhkd
@@ -50,7 +48,7 @@ autokill() {
    killall redshift
 }
 
-# 始まる
+# execute
 autostart &
-exec 2bwm
+exec herbstluftwm
 autokill; sleep 1

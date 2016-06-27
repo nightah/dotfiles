@@ -66,8 +66,8 @@ set sidescrolloff=5         " 5 character offset from left-right
 set nowrap                  " don't wrap lines
 set virtualedit=all         " enable virtualedit (visual block)
 set expandtab               " spaces not tabs
-set softtabstop=2           " indents
-set shiftwidth=2            " more indents
+set softtabstop=3           " indents
+set shiftwidth=3            " more indents
 set number                  " show line numbers
 set noswapfile              " no swap files
 set updatecount=0           " we don't use swap files

@@ -22,6 +22,7 @@ export LANG="en_US.UTF-8"
 # exports
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.bin:$PATH
+export PATH=$HOME/.wmrc:$PATH
 export PATH=$PATH:$HOME/.config/herbstluftwm
 
 # nvidia settings
