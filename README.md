@@ -2,7 +2,7 @@
 
 __Introduction:__
 
-Repository for my dotfiles. I'm planning to keep these settings as up-to-date as possible. In the near future I'll be setting stow up as well, so people can install my dotfiles with ease. Feel free to comment and use my files for your own greedy needs.
+Welcome to the endless binary space of wonders.
 
 #####Applications:
 - __menu:__ dmenu
@@ -12,7 +12,7 @@ Repository for my dotfiles. I'm planning to keep these settings as up-to-date as
 - __image viewer:__ sxiv
 - __music:__ mpd/deadbeef
 - __composition:__ compton
-- __window manager:__ 2bwm
+- __window manager:__ herbstluftwm
 - __internet browser:__ qutebrowser
 - __file manager:__ coretools/ranger
 
