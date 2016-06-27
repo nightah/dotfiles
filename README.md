@@ -1,8 +1,8 @@
-###Treasure Box of Wonders
+###Treasure Box
 
 __Introduction:__
 
-Welcome to the endless binary space of wonders.
+Welcome to the endless binary space of wonders. Enter a greater void through the astral gate. 
 
 #####Applications:
 - __menu:__ dmenu
