@@ -10,7 +10,7 @@
 # ░░   ░░ ░░ ░░░   ░░ ░░    ░░  ░░░     ░░░░░  
 # destroy everything!
 
-# do something 
+# don't ask me 
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
   for f in /etc/X11/xinit/xinitrc.d/*; do
     [ -x "$f" ] && . "$f"
@@ -29,26 +29,27 @@ xset r rate 350 45
 xsetroot -cursor_name left_ptr
 setxkbmap -option terminate:ctrl_alt_bksp
 
-# autostart
+# automagic
 autostart() {
-   nitrogen --restore
-   xmodmap .xmodmap
    xcmenu -d
-   sxhkd &
    urxvtd -q -f -o
+   xmodmap .xmodmap
+   nitrogen --restore
+   sxhkd -c ~/.config/sxhkd/sxhkdrc \
+            ~/.config/sxhkd/sxhkdrc.herb &
    redshift -l 64:25 -b 0.8:0.8 &> /dev/null &
 }
 
-# kill everyone
+# eat the world
 autokill() {
-   killall xcmenu
    killall sxhkd
+   killall xcmenu
    killall urxvtd
    killall lemonbar
    killall redshift
 }
 
-# execute
+# EXEcute
 autostart &
 exec herbstluftwm
 autokill; sleep 1
