@@ -9,7 +9,7 @@
 ! Undertale arrow keys.
 
 ! Add an extra arrow keys for HHKB.
-! Replaces p,ö,k,ä keys.
+! Replaces p,ö,l,ä keys.
 
 keycode 33 = Up
 keycode 47 = Down
