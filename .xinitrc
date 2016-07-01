@@ -35,6 +35,7 @@ autostart() {
    urxvtd -q -f -o
    xmodmap .xmodmap
    nitrogen --restore
+   unclutter -grab root &
    sxhkd -c ~/.config/sxhkd/sxhkdrc \
             ~/.config/sxhkd/sxhkdrc.herb &
    redshift -l 64:25 -b 0.8:0.8 &> /dev/null &
@@ -42,11 +43,12 @@ autostart() {
 
 # eat the world
 autokill() {
-   killall sxhkd
    killall xcmenu
    killall urxvtd
+   killall sxhkd
    killall lemonbar
    killall redshift
+   killall unclutter
 }
 
 # EXEcute
