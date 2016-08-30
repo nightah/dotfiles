@@ -1,3 +1,4 @@
+alias m='makepkg -csi'
 alias po='poweroff'
 alias rm='rm -v'
 alias mv='mv -v'
@@ -23,3 +24,4 @@ alias svorak='setxkbmap -layout se -variant dvorak; xmodmap ~/.xmodmap; xset r r
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" && echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'s
 alias np="mpc current -f '%title% by %artist% from %album%' | xcmenu -ci"
 alias dnp="deadbeef --nowplaying '%t by %a from %b' | xcmenu -ci"
+alias backup='rsync -aAXv --exclude={"/run/media/shn/*r","/home/*/.thumbnails/*","/home/*/.steam/*","/home/*/.local/share/Steam/*","/home/*/.wine/*","/home/*/.cache/mozilla/*","/home/*/.cache/chromium/*","/home/*/.local/share/Trash/*","/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} / /run/media/shn/akuma/$(date -I)'

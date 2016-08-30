@@ -24,11 +24,12 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.bin:$PATH
 export PATH=$HOME/.wmrc:$PATH
 export PATH=$PATH:$HOME/.config/herbstluftwm
+export XDG_CURRENT_DESKTOP=gnome
 
 # nvidia settings
-export __GL_SYNC_TO_VBLANK=1
-export __GL_SYNC_DISPLAY_DEVICE=DVI-I-2
-export __GL_THREADED_OPTIMIZATIONS=0
+#export __GL_SYNC_TO_VBLANK=1
+#export __GL_SYNC_DISPLAY_DEVICE=DVI-I-3
+#export __GL_THREADED_OPTIMIZATIONS=0
 
 LS_COLORS='di=100:fi=33:ln=31:pi=5:so=5:bd=5:cd=4:or=31:mi=0:ex=35'
 export LS_COLORS
