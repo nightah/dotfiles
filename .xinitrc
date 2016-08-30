@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #          ██          ██   ██                 
 #         ░░          ░░   ░██                 
@@ -19,7 +19,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 # xrdb
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+[ -f ~/.Xresources ] && xrdb -merge -I$HOME ~/.Xresources
 
 # magic
 setxkbmap fi
@@ -39,6 +39,7 @@ autostart() {
    sxhkd -c ~/.config/sxhkd/sxhkdrc \
             ~/.config/sxhkd/sxhkdrc.herb &
    redshift -l 64:25 -b 0.8:0.8 &> /dev/null &
+   #compton -cCGfF -o 0.38 -O 200 -I 200 -t 0 -l 0 -r 3 -D2 -m 0.88
 }
 
 # eat the world

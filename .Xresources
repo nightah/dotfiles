@@ -18,18 +18,20 @@ URxvt*boldFont:
 ! uim
 ! URxvt.inputMethod: uim-xim
 
-! Fix ctrl + arrow keys
+! fix ctrl + arrow keys
 URxvt.keysym.Control-Up: \033[1;5A
 URxvt.keysym.Control-Down: \033[1;5B
 URxvt.keysym.Control-Left: \033[1;5D
 URxvt.keysym.Control-Right: \033[1;5C
 
 ! settings
+urxvt*urgentOnBell: true
 URxvt*scrollBar: false
 URxvt*cursorBlink:false
 URxvt*iso14755: false
 URxvt*url-launcher: qutebrowser
 URxvt*termName: rxvt-unicode-256color
+URxvt.geometry: 72x22
 
 ! custom key bindings
 URxvt.perl-ext-common: default,matcher,clipboard
