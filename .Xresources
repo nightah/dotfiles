@@ -9,7 +9,8 @@
 
 ! fonts
 URxvt*font: xft:berry:size=8,\
-            xft:Kochi Gothic:antialias=false
+            xft:Kochi Gothic:antialias=false,\
+            xft:Siji:antialias=false
 URxvt*boldFont:
 
 ! colorscheme

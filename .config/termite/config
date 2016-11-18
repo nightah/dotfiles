@@ -1,3 +1,13 @@
+#    ██                              ██   ██          
+#   ░██                             ░░   ░██          
+#  ██████  █████  ██████ ██████████  ██ ██████  █████ 
+# ░░░██░  ██░░░██░░██░░█░░██░░██░░██░██░░░██░  ██░░░██
+#   ░██  ░███████ ░██ ░  ░██ ░██ ░██░██  ░██  ░███████
+#   ░██  ░██░░░░  ░██    ░██ ░██ ░██░██  ░██  ░██░░░░ 
+#   ░░██ ░░██████░███    ███ ░██ ░██░██  ░░██ ░░██████
+#    ░░   ░░░░░░ ░░░    ░░░  ░░  ░░ ░░    ░░   ░░░░░░
+#   CONFIGURATION
+
 [options]
 scroll_on_output = false
 scroll_on_keystroke = true
@@ -7,7 +17,7 @@ allow_bold = false
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = berry 9
+font = berry
 scrollback_lines = 1000
 search_wrap = true
 #icon_name = terminal
@@ -28,53 +38,51 @@ size_hints = true
 # emit escape sequences for other keys modified by Control
 #modify_other_keys = false
 
-[colors]
-cursor = #7B8695
-foreground = #7B8695
-foreground_bold = #eee8d5
-background = #1d1f21
-
 # 20% background transparency (requires a compositor)
 # background = rgba(63, 63, 63, 0.8)
 
 # if unset, will reverse foreground and background
 highlight = #2f2f2f
 
-# Moonbow
-color0 = #404040
-color1 = #785561
-color2 = #58614f
-color3 = #7e735a
-color4 = #424a64
-color5 = #4d3e4c
-color6 = #3c5a5d
-color7 = #7b8695
-color8 = #464646
-color9 = #8a6270
-color10 = #6d7762
-color11 = #8d8063
-color12 = #626c94
-color13 = #665064
-color14 = #548084
-color15 = #94a1B3
+[colors]
 
-# Barrage
-#color0 = #3a3a3a
-#color1 = #8c5b3e
-#color2 = #80764d
-#color3 = #917154
-#color4 = #596875
-#color5 = #6e464b
-#color6 = #495e61
-#color7 = #839496
-#color8 = #505050
-#color9 = #9f6744
-#color10 = #80785a
-#color11 = #917963
-#color12 = #656d75
-#color13 = #6e5155
-#color14 = #525F61
-#color15 = #b2b2b2
+# special
+foreground      = #888e94
+foreground_bold = #888e94
+cursor          = #888e94
+background      = #1d1f21
+
+# black
+color0  = #404040
+color8  = #464646
+
+# red
+color1  = #784d57
+color9  = #784955
+
+# green
+color2  = #536153
+color10 = #506150
+
+# yellow
+color3  = #7d7250
+color11 = #7d654c
+
+# blue
+color4  = #4c5863
+color12 = #495663
+
+# magenta
+color5  = #59404d
+color13 = #593e4b
+
+# cyan
+color6  = #435c5c
+color14 = #405c5c
+
+# white
+color7  = #7f8a94
+color15 = #7b8794
 
 [hints]
 #font = Monospace 12
