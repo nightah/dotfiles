@@ -7,22 +7,20 @@
 #  ██████  ██ ░░██░██  ░██░██░░██░░██████
 # ░░░░░░  ░░   ░░ ░░   ░░ ░░  ░░  ░░░░░░ 
 
-# Normal commands to replace
-# any window manager's way to
-# handle keybindings. Makes life
-# a lot easier. Doesn't include
-# bindings to move windows.
+# sxhkd configuration
+# universal
 
-# menu
-alt + p
-   dmenu_run
+# reload sxhkd config
+alt + shift + z
+   pkill -USR1 -x sxhkd; notify-send "sxhkd settings reloaded"
 
-alt + comma
-   dmenufm
-        
-# mpd toggle
-control + section
-   mpc toggle
+# toggle redshift
+control + apostrophe
+   pkill -USR1 redshift; notify-send "redshift toggled"
+
+# display off
+XF86PowerOff
+   display.sh off
 
 # web, fm, img
 alt + {1,2,3}
@@ -33,8 +31,24 @@ alt + {odiaeresis,adiaeresis}
     
 # terminal
 alt + shift + Return
-   urxvtc
+   termite
 
+# menu
+alt + p
+   dmenu_run
+
+# dirty way to start an anime serie
+alt + comma
+   cd /mnt/oppai/anime && dmenufm
+
+# mpd
+#control + section
+#   mpc toggle
+
+# deadbeef
+control + section
+   deadbeef --toggle-pause
+   
 # TAS
 alt + 4
    cd ~/TAS/fceux-2.2.2 && wine fceux.exe
@@ -43,18 +57,24 @@ alt + 4
 alt + 5
    cd ~/games/PC/Undertale && wine UNDERTALE.exe
 
-# reload sxhkd config
-alt + shift + s
-   pkill -USR1 -x sxhkd; notify-send "sxhkd settings reloaded"
+# screencast/streaming
+alt + ctrl + x
+   pkill -f 'x11grab'
 
-# quit herbstluftwm
-alt + control + q
-   herbstclient quit
-
-# toggle redshift
-control + apostrophe
-   pkill -USR1 redshift; notify-send "redshift toggled"
-
-# display off
-XF86PowerOff
-   display.sh off
+alt + ctrl + a
+   screencast
+#
+#
+#	echo "split()" | nc -U /tmp/nwsplit.sock
+#
+#alt + ctrl + q
+#	echo "reset()" | nc -U /tmp/nwsplit.sock && notify-send "nwsplit: reset"
+#	
+#alt + ctrl + s
+#	echo "stop()" | nc -U /tmp/nwsplit.sock && notify-send "nwsplit: stop"
+#
+#ctrl + F9
+#	echo "pause()" | nc -U /tmp/nwsplit.sock && notify-send "nwsplit: pause"
+#
+#alt + ctrl + u
+#	echo "undo()" | nc -U /tmp/nwsplit.sock	&& notify-send "nwsplit: undo"

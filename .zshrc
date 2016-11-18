@@ -25,6 +25,7 @@ export PATH=$HOME/.bin:$PATH
 export PATH=$HOME/.wmrc:$PATH
 export PATH=$PATH:$HOME/.config/herbstluftwm
 export XDG_CURRENT_DESKTOP=gnome
+export RANGER_LOAD_DEFAULT_RC=FALSE
 
 # nvidia settings
 #export __GL_SYNC_TO_VBLANK=1

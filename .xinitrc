@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #          ██          ██   ██                 
 #         ░░          ░░   ░██                 
 #  ██   ██ ██ ███████  ██ ██████ ██████  █████ 
@@ -32,20 +31,19 @@ setxkbmap -option terminate:ctrl_alt_bksp
 # automagic
 autostart() {
    xcmenu -d
-   urxvtd -q -f -o
+   #urxvtd -q -f -o
    xmodmap .xmodmap
    nitrogen --restore
-   unclutter -grab root &
+   xbanish &
    sxhkd -c ~/.config/sxhkd/sxhkdrc \
             ~/.config/sxhkd/sxhkdrc.herb &
    redshift -l 64:25 -b 0.8:0.8 &> /dev/null &
-   #compton -cCGfF -o 0.38 -O 200 -I 200 -t 0 -l 0 -r 3 -D2 -m 0.88
 }
 
 # eat the world
 autokill() {
    killall xcmenu
-   killall urxvtd
+   #killall urxvtd
    killall sxhkd
    killall lemonbar
    killall redshift

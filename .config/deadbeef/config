@@ -1,30 +1,45 @@
-artwork.filemask *cover*.jpg;*front*.jpg;*folder*.jpg;*cover*.png;*front*.png;*folder*.png
+artwork.cache.period 48
+artwork.cache_reset_time 1479398896
+artwork.enable_albumartorg 0
+artwork.enable_embedded 1
+artwork.enable_lastfm 1
+artwork.enable_localfolder 1
+artwork.enable_musicbrainz 0
+artwork.enable_wos 0
+artwork.filemask *over.jpg;*over.png
+artwork.missing_artwork 1
+artwork.nocover_path 
+artwork.scale_towards_longer 1
+artwork.scaled.cache_reset_time 1479398896
 chip.voices 255
 cli_add_playlist_name Default
 cli_add_to_specific_playlist 1
-deadbeef_version 0.7.0
+deadbeef_version 0.7.2
 gtkui.color.bar_background 8738 9252 10023
+gtkui.color.bar_foreground 22616 14392 14392
 gtkui.color.listview_cursor 24158 14392 14392
 gtkui.color.listview_even_row 7453 7967 8481
 gtkui.color.listview_group_text 43176 43176 43176
 gtkui.color.listview_odd_row 8224 8738 9509
+gtkui.color.listview_selection 22616 14392 14392
 gtkui.color.listview_text 43176 43176 43176
-gtkui.columns.playlist [{"title":"art","id":"8","format":"","size":"100","align":"0","color_override":"0","color":"#ffa8a8a8"},{"title":"artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","size":"134","align":"0","color_override":"0","color":"#ff000000"},{"title":"title","id":"-1","format":"%title%","size":"188","align":"0","color_override":"0","color":"#ff000000"},{"title":"~","id":"-1","format":"%length%","size":"45","align":"0","color_override":"0","color":"#ff000000"},{"title":"#","id":"-1","format":"%track number%","size":"30","align":"2","color_override":"0","color":"#ff000000"}]
-gtkui.columns.search [{"title":"Artist / Album","id":"-1","format":"%artist% - %album%","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%track number%","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.columns.playlist [{"title":"art","id":"8","format":"","size":"100","align":"0","color_override":"0","color":"#ffa8a8a8"},{"title":"artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","size":"129","align":"0","color_override":"0","color":"#ff000000"},{"title":"title","id":"-1","format":"%title%","size":"171","align":"0","color_override":"0","color":"#ff000000"},{"title":"~","id":"-1","format":"%length%","size":"45","align":"0","color_override":"0","color":"#ff000000"},{"title":"#","id":"-1","format":"%track number%","size":"30","align":"2","color_override":"0","color":"#ff000000"}]
+gtkui.columns.search [{"title":"artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","size":"129","align":"0","color_override":"0","color":"#ffa8a8a8"},{"title":"album","id":"-1","format":"%album%","size":"144","align":"0","color_override":"0","color":"#ff000000"},{"title":"#","id":"-1","format":"%track number%","size":"23","align":"1","color_override":"0","color":"#ff000000"},{"title":"title","id":"-1","format":"%title%","size":"153","align":"0","color_override":"0","color":"#ff000000"},{"title":"~","id":"-1","format":"%length%","size":"100","align":"0","color_override":"0","color":"#ffa8a8a8"}]
 gtkui.eq.visible 0
-gtkui.font.listview_column_text berry Medium 8
-gtkui.font.listview_group_text berry Medium 8
-gtkui.font.listview_text berry Medium 8
-gtkui.font.tabstrip_text Terminus 8
+gtkui.font.listview_column_text berry Medium 9
+gtkui.font.listview_group_text berry Medium 9
+gtkui.font.listview_text berry Medium 9
+gtkui.font.tabstrip_text berry Medium 9
 gtkui.hide_remove_from_disk 1
 gtkui.hide_tray_icon 0
-gtkui.layout.0.6.2 playlist hideheaders=1 {} 
+gtkui.layout.0.6.2 playlist hideheaders=0 width=483 {} 
 gtkui.mmb_delete_playlist 1
 gtkui.name_playlist_from_folder 1
 gtkui.override_bar_colors 1
 gtkui.override_listview_colors 1
 gtkui.override_tabstrip_colors 1
 gtkui.playlist.group_by_tf %album%
+gtkui.search.group_by_tf %b
 gtkui.show_menu 0
 gtkui.statusbar.visible 0
 gtkui.tabscroll 0
@@ -68,10 +83,18 @@ hotkey.key33 "Left" 0 0 seek_5p_back
 hotkeys_created 1
 ignore_archives 1
 junk.enable_cp1251_detection 1
-mainwin.geometry.h 1062
-mainwin.geometry.w 509
-mainwin.geometry.x 0
-mainwin.geometry.y 0
+lastfm.disable_np 0
+lastfm.enable 1
+lastfm.login Shinryuu-
+lastfm.mbid 0
+lastfm.password 01.nuvobam.03
+lastfm.prefer_album_artist 0
+lastfm.scrobbler_url http://post.audioscrobbler.com
+lastfm.submit_tiny_tracks 0
+mainwin.geometry.h 1050
+mainwin.geometry.w 483
+mainwin.geometry.x 1921
+mainwin.geometry.y 17
 musical_spectrum.alignment 2
 musical_spectrum.bar_delay 0
 musical_spectrum.bar_falloff -1
@@ -111,35 +134,46 @@ playback.loop 0
 playback.order 0
 playback.volume 0.0000000
 playlist.current 0
-playlist.cursor.0 7764
-playlist.cursor.1 -1
-playlist.cursor.2 -1
-playlist.pin.groups 1
-playlist.scroll.0 151378
+playlist.cursor.0 6088
+playlist.cursor.1 27
+playlist.cursor.2 10
+playlist.cursor.3 14
+playlist.cursor.4 142
+playlist.cursor.5 0
+playlist.cursor.6 0
+playlist.pin.groups 0
+playlist.scroll.0 114367
 playlist.scroll.1 0
-playlist.scroll.2 15230
+playlist.scroll.2 0
+playlist.scroll.3 0
+playlist.scroll.4 2440
+playlist.scroll.5 0
+playlist.scroll.6 0
 playlist.scroll.cursorfollowplayback 1
 playlist.stop_after_current 0
-playlist.tab.00000 evrthng
-playlist.tab.00001 random
-playlist.tab.00002 Default
-prefwin.geometry.h 494
-prefwin.geometry.w 715
-prefwin.geometry.x 0
-prefwin.geometry.y 21
+playlist.tab.00000 I
+playlist.tab.00001 III
+playlist.tab.00002 V
+playlist.tab.00003 IX
+playlist.tab.00004 X
+playlist.tab.00005 New Playlist
+prefwin.geometry.h 519
+prefwin.geometry.w 590
+prefwin.geometry.x 1921
+prefwin.geometry.y 548
 replaygain_mode 0
 replaygain_scale 1
 resume.paused 0
 resume.playlist 0
-resume.position 200.55307
-resume.track 7764
-searchwin.geometry.h 522
-searchwin.geometry.w 726
-searchwin.geometry.x 0
-searchwin.geometry.y 263
-streamer.16_to_24 0
+resume.position -1.000000
+resume.track -1
+searchwin.geometry.h 527
+searchwin.geometry.w 483
+searchwin.geometry.x 1921
+searchwin.geometry.y 540
+streamer.16_to_24 1
 streamer.8_to_16 1
-trkproperties.geometry.h 585
-trkproperties.geometry.w 849
-trkproperties.geometry.x 0
-trkproperties.geometry.y 477
+trkproperties.geometry.h 519
+trkproperties.geometry.w 483
+trkproperties.geometry.x 1921
+trkproperties.geometry.y 548
