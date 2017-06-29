@@ -19,27 +19,24 @@ control + apostrophe
    pkill -USR1 redshift; notify-send "redshift toggled"
 
 # display off
-XF86PowerOff
+mode_switch + Escape
    display.sh off
 
 # web, fm, img
 alt + {1,2,3}
-   {qutebrowser,spacefm,gimp}
+   {qutebrowser --backend webengine,spacefm,gimp}
     
 alt + {odiaeresis,adiaeresis}
    {xcmenuctrl,lolimpdnu}
     
 # terminal
 alt + shift + Return
-   termite
-
+   urxvtc
+   #termite
+   
 # menu
 alt + p
    dmenu_run
-
-# dirty way to start an anime serie
-alt + comma
-   cd /mnt/oppai/anime && dmenufm
 
 # mpd
 #control + section
@@ -50,11 +47,11 @@ control + section
    deadbeef --toggle-pause
    
 # TAS
-alt + 4
+alt + F4
    cd ~/TAS/fceux-2.2.2 && wine fceux.exe
 
 # Undertale
-alt + 5
+alt + F5
    cd ~/games/PC/Undertale && wine UNDERTALE.exe
 
 # screencast/streaming
