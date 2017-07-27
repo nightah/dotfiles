@@ -7,17 +7,21 @@
 monitor=${1:-0}
 
 # padding
-herbstclient pad $monitor 16
+herbstclient pad $monitor 20
 
 # settings
-RES="x16+1920x"
+RES="x20+1920x"
 FONT="*-siji-medium-r-*-*-10-*-*-*-*-*-*-*"
+#FONT2="*-benis-lemon-medium-r-*-*-10-*-*-*-*-*-*-*"
 FONT2="-*-cure.se-medium-r-*-*-11-*-*-*-*-*-*-*"
-FONT3="Kochi Gothic-8"
-BG="#1D1F22"
+FONT3="IPAGothic:pixelsize=11:antialias=false"
+#FONT3="Kochi Gothic-8" # stopped working; fontconfig issues?
+
+BG="#1D1F21"
+BA="#242629"
 FG="#A8A8A8"
 BLK="#262626"
-RED="#834f48"
+RED="#7d3750"
 YLW="#917154"
 BLU="#45536E"
 GRA="#898989"
@@ -74,26 +78,26 @@ function uniq_linebuffered() {
         for i in "${TAGS[@]}" ; do
             case ${i:0:1} in
                 '#') # current tag
-                    echo -n "%{U$RED}%{+u}"
+                    echo -n "%{B$RED}"
                     ;;
                 '+') # active on other monitor
-                    echo -n "%{U$YLW}%{+u}"
+                    echo -n "%{B$YLW}"
                     ;;
                 ':')
-                    echo -n "%{-u}"
+                    echo -n "%{B-}"
                     ;;
                 '!') # urgent tag
                     echo -n "%{U$YLW}"
                     ;;
                 *)
-                    echo -n "%{-u}"
+                    echo -n "%{B-}"
                     ;;
             esac
-            echo -n " ${i:1} "
+            echo -n " ${i:1} %{B-}"
         done
 	
 	# center window title
-	echo -n "%{c}$st%{F$GRA}${windowtitle//^/^^} %{F-}"
+	echo -n "%{c}$st${windowtitle//^/^^}"
 	
         # align right
         echo -n "%{r}"
