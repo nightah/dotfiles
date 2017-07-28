@@ -1,10 +1,3 @@
-###Treasure Box
-
-__Introduction:__
-
-Welcome to the endless binary space of wonders. Enter a greater void through the astral gate. 
-
-#####Applications:
 - __menu:__ dmenu
 - __panel:__ lemonbar
 - __terminal:__ urxvt
@@ -16,4 +9,4 @@ Welcome to the endless binary space of wonders. Enter a greater void through the
 - __internet browser:__ qutebrowser
 - __file manager:__ coretools/ranger
 
-![bundled shot](https://files.catbox.moe/j5chsc.png)
+![bundled shot](https://a.yiff.moe/uessdp.gif)

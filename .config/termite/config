@@ -8,41 +8,6 @@
 #    ░░   ░░░░░░ ░░░    ░░░  ░░  ░░ ░░    ░░   ░░░░░░
 #   CONFIGURATION
 
-[options]
-scroll_on_output = false
-scroll_on_keystroke = true
-audible_bell = false
-mouse_autohide = false
-allow_bold = false
-dynamic_title = true
-urgent_on_bell = true
-clickable_url = true
-font = berry
-scrollback_lines = 1000
-search_wrap = true
-#icon_name = terminal
-#geometry = 480x280
-
-# "system", "on" or "off"
-cursor_blink = off
-
-# "block", "underline" or "ibeam"
-cursor_shape = block
-
-# $BROWSER is used by default
-browser = qutebrowser
-
-# set size hints for the window
-size_hints = true
-
-# emit escape sequences for other keys modified by Control
-#modify_other_keys = false
-
-# 20% background transparency (requires a compositor)
-# background = rgba(63, 63, 63, 0.8)
-
-# if unset, will reverse foreground and background
-highlight = #2f2f2f
 
 [colors]
 
@@ -83,6 +48,58 @@ color14 = #405c5c
 # white
 color7  = #7f8a94
 color15 = #7b8794
+
+[options]
+allow_bold = true
+#audible_bell = false
+#clickable_url = true
+#dynamic_title = true
+font = spectrum berry 9
+#fullscreen = true
+#geometry = 640x480
+#icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
+#search_wrap = true
+urgent_on_bell = true
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+browser = qutebrowser
+
+# "system", "on" or "off"
+#cursor_blink = system
+
+# "block", "underline" or "ibeam"
+#cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+[colors]
+# If both of these are unset, cursor falls back to the foreground color,
+# and cursor_foreground falls back to the background color.
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
+
+#foreground = #dcdccc
+#foreground_bold = #ffffff
+#background = #3f3f3f
+
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
+
+# If unset, will reverse foreground and background
+highlight = #2f2f2f
 
 [hints]
 #font = Monospace 12
