@@ -13,7 +13,7 @@ herbstclient pad $monitor 16
 RES="x16+1920x"
 FONT="*-siji-medium-r-*-*-10-*-*-*-*-*-*-*"
 FONT2="-*-cure.se-medium-r-*-*-11-*-*-*-*-*-*-*"
-FONT3="Kochi Gothic-8"
+FONT3="IPAGothic-8"
 BG="#1D1F22"
 FG="#A8A8A8"
 BLK="#262626"

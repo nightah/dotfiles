@@ -23,7 +23,7 @@ Mod=Mod1    # Use alt as the main modifier
 
 # tags
 tag_names=("TERM" "WEB" "IMG" "NULL" "HERB")
-tag_keys=( {1..5} 0 )
+tag_keys=( {F1,F2,F3,F4,F5} 0 )
 
 hc rename default "${tag_names[0]}" || true
 for i in ${!tag_names[@]} ; do
@@ -31,7 +31,7 @@ for i in ${!tag_names[@]} ; do
     key="${tag_keys[$i]}"
     if ! [ -z "$key" ] ; then
         hc keybind "Control-$key" use_index "$i"
-        hc keybind "$Mod-Control-$key" move_index "$i"
+        hc keybind "$Mod-Shift-$key" move_index "$i"
     fi
 done
 
@@ -106,6 +106,13 @@ hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' pseudotile=on
 hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 
+# center all other gimp windows on gimp tag
+hc rule class=Gimp tag=IMG index=01 pseudotile=on
+hc rule class=Gimp windowrole~'gimp-(image-window|toolbox|dock)' \
+pseudotile=off
+hc rule class=Gimp windowrole=gimp-toolbox focus=off index=00
+hc rule class=Gimp windowrole=gimp-dock focus=off index=1
+
 # unlock, just to be sure
 hc unlock
 
@@ -117,9 +124,9 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 hc detect_monitors
 
 # find the panel
-panel=~/.config/herbstluftwm/panel_old.sh
-[ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
-for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
-    # start it on each monitor
-    "$panel" &
-done
+#panel=~/.config/herbstluftwm/panel_old.sh
+#[ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
+#for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
+#    # start it on each monitor
+#    "$panel" &
+#done

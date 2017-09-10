@@ -7,7 +7,7 @@
 monitor=${1:-0}
 
 # custom tag names
-#readonly tag_shows=("一 ichi" "二 ni" "三 san" "四 shi" "五 go")
+# readonly tag_shows=("一 ichi" "二 ni" "三 san" "四 shi" "五 go")
 
 # padding
 herbstclient pad $monitor 20
@@ -19,7 +19,7 @@ FONT="*-siji-medium-r-*-*-10-*-*-*-*-*-*-*"
 FONT2="-*-cure.se-medium-r-*-*-11-*-*-*-*-*-*-*"
 FONT3="KochiGothic:pixelsize=11:antialias=false"
 
-BG="#181920"
+BG="#1D1F21"
 BA="#242629"
 FG="#A8A8A8"
 BLK="#262626"
@@ -45,11 +45,8 @@ function uniq_linebuffered() {
 # events
 {   
     # now playing
-    while true ; do
-        echo "mus $(deadbeef --nowplaying '%a  %t')"
-        sleep 1 || break
-    done > >(uniq_linebuffered) &
-    mus_pid=$!
+    mpc idleloop player | cat &
+    mpc_pid=$!
 
     # volume
     while true ; do
@@ -69,7 +66,7 @@ function uniq_linebuffered() {
     herbstclient --idle
 
     # exiting; kill stray event-emitting processes
-    kill $mus_pid $vol_pid $date_pid    
+    kill $mpc_pid $vol_pid $date_pid    
 } 2> /dev/null | {
     TAGS=( $(herbstclient tag_status $monitor) )
     unset TAGS[${#TAGS[@]}]
@@ -107,7 +104,7 @@ function uniq_linebuffered() {
         # align right
         echo -n "%{r}"
         echo -n "$sm"
-        echo -n %{F$YLW}"$mus"%{F-}
+        echo -n "$song" %{F$YLW}"$song2"%{F-}
         echo -n "$sv"
         echo -n "$volume"
         echo -n "$sd"
@@ -123,8 +120,9 @@ function uniq_linebuffered() {
                 TAGS=( $(herbstclient tag_status $monitor) )
                 unset TAGS[${#TAGS[@]}]
                 ;;
-            mus)
-		mus="${cmd[@]:1}"
+            mpd_player|player)
+		song="$(mpc -f %artist% current)"
+		song2="$(mpc -f %title% current)"
 		;;
 	    vol)
                 volume="${cmd[@]:1}"
