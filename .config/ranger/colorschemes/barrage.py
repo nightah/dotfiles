@@ -25,7 +25,7 @@ class Default(ColorScheme):
                 attr = bold
                 fg = red
             if context.image:
-                fg = magenta
+                fg = red
             if context.video:
                 fg = cyan		
             if context.audio:

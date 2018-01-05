@@ -13,11 +13,11 @@ monitor=${1:-0}
 herbstclient pad $monitor 20
 
 # settings
-RES="x20+1920x"
+#RES="x20+1920x"
+RES="x20"
 FONT="*-siji-medium-r-*-*-10-*-*-*-*-*-*-*"
-#FONT2="*-benis-lemon-medium-r-*-*-10-*-*-*-*-*-*-*"
-FONT2="-*-cure.se-medium-r-*-*-11-*-*-*-*-*-*-*"
-FONT3="KochiGothic:pixelsize=11:antialias=false"
+FONT2="*-benis-lemon-medium-r-*-*-10-*-*-*-*-*-*-*"
+FONT3="Kochi\Gothic:pixelsize=11:antialias=false"
 
 BG="#181920"
 BA="#242629"
