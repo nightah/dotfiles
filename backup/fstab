@@ -1,6 +1,0 @@
-# 
-# /etc/fstab: static file system information
-#
-
-# /dev/sdb1
-#UUID=8635ada8-cd17-44b4-a5f5-87e93cf69889	/mnt/akuma	ext4      	rw,relatime,data=ordered	0 2
