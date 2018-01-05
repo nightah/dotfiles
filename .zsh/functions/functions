@@ -113,3 +113,7 @@ bremux() {
       remux "[REMUX]$i" "$i" "$1" "$2"
    done
 }
+
+function mm() {
+    mpv --no-video --ytdl-format=bestaudio ytdl://ytsearch10:"$@"
+}

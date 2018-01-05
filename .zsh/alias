@@ -20,13 +20,11 @@ alias ncp='ncmpcpp'
 alias amix='alsamixer'
 alias hc="herbstclient"
 alias wee='weechat-curses'
-alias paci='sudo pacman -S'
-alias pacse='sudo pacman -Ss'
-alias pacu='sudo pacman -Syu'
-alias pacre='sudo pacman -R'
-alias qwerty='setxkbmap fi; xmodmap ~/.xmodmap; xset r rate 350 45'
-alias undertale='setxkbmap fi; xmodmap ~/.xmodmap_undertale; xset r rate 350 45'
+alias xu='sudo xbps-install -Su'
+alias xi='sudo xbps-install -S'
+alias xs='xbps-query -R'
 alias svorak='setxkbmap -layout se -variant dvorak; xmodmap ~/.xmodmap; xset r rate 350 45'
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" && echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'s
 alias np="mpc current -f '%title% by %artist% from %album%' | xcmenu -ci"
 alias dnp="deadbeef --nowplaying '%t by %a from %b' | xcmenu -ci"
+alias jwine="LANG=ja_JP.UTF-8 wine"

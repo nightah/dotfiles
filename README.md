@@ -1,1 +1,1 @@
-![bundled shot](https://a.yiff.moe/uessdp.gif)
+![bundled shot](https://my.mixtape.moe/gkiajz.png)
