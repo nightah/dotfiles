@@ -5,7 +5,6 @@ pacman -Qqe > pkglist.txt
 # do this if you have foreign packages
 pacman -S $(comm -12 <(pacman -Slq | sort) <(sort pkglist.txt))
 pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pkglist.txt))
-pacman -S - < pkglist.txt
 
 # partitioning and making filesystems
 cfdisk /dev/sda
